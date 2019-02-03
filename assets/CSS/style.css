@@ -1,7 +1,22 @@
 h1 {
     color: red;
+    font-size: 40px;
+}
+
+h2 {
+    color: black;
+    font-size: 20px;
+    padding-top: 100px;
 }
 
 #answerArray {
-    font-size: 24px;
+    font-size: 20px;
+    color: blue;
+    padding-top: 100px;
+}
+
+#lives {
+    font-size: 20px;
+    color: green;
+    padding-top: 50px;
 }

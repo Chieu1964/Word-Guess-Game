@@ -3,14 +3,34 @@
     <head>
         <meta charset="utf-8">
         <title>Word Gessing Demo</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-        <h1 id="title">Word Guessing Game</h1>
-        <p id="answerArray"></p>
-        <p>lives <span id="lives"></span></p>
-        <button type="button" onclick='startGame()'>Start New Game</button>
-        <div id="imagePlaceHolder"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                        <h1 id="title">Word Guessing Game</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                        <p><h2>Lives: <span id="lives"></span></h2></p>
+                </div>
+                <div class="col-md-8">
+                        <p id="answerArray"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                        <button type="button" onclick='startGame()'>Start New Game</button>
+                        <div id="imagePlaceHolder"></div>
+                </div>
+                
+            </div>
+        </div>
 
         <script src="assets/javascript/game.js"></script>
     </body>

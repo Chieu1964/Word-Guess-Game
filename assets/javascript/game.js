@@ -6,11 +6,8 @@
             });            
            // Create an array of words
             var dog = ["lab", "husky", "greyhound"];
-            var dogImg = ["a.jpg", "b.jpg", "c.jpg"];
-            var lives = 3;
-
-            // pick a (random) word
-          
+            // var dogImg = ["a.jpg", "b.jpg", "c.jpg"];
+            var lives = 10;                
             var word;
             var answerArray;
             var remainingLetters;
@@ -19,10 +16,12 @@
 
             // Reset and start game
             function startGame() {
-                lives = 3
+                lives = 10
                 livesText.innerHTML = lives;
-                word = dog[0]
-                //word = dog[Math.floor(Math.random() * dog.length)]; // pick a word randomly
+            
+             // pick a (random) word
+                // word = dog[0]
+                word = dog[Math.floor(Math.random() * dog.length)]; 
             // Set up the answer array
                 answerArray = [];
                 for (i = 0; i < word.length; i++) {
@@ -36,8 +35,6 @@
             // The game loop
             function checkGuess(guess) {
             if (remainingLetters != 0) {
-                            
-                
                 for (j = 0; j < word.length; j++) {
                     if (word[j] === guess) {
                         answerArray[j] = guess;
